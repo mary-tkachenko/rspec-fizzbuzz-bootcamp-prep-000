@@ -1,12 +1,24 @@
-def fizzbuzz (number)
+def fizzbuzz(number)
   if number % 3 == 0 && number % 5 == 0
-      "FizzBuzz"
+    return "FizzBuzz"
 
-elsif number % 5 == 0
+  if number % 5 == 0
+    return "Buzz"
+
+  if number % 3 == 0
+    return "Fizz"
+  end
+
+  return number
+end
+
+
+def fizzbuzz2(number)
+  if number % 3 == 0 && number % 5 == 0
+    "FizzBuzz"
+  elsif number % 5 == 0
     "Buzz"
-
-elsif number % 3 == 0
-      "Fizz"
-
+  elsif number % 3 == 0
+    "Fizz"
   end
 end
